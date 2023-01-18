@@ -1,9 +1,13 @@
 # material-date-fns-tz-adapter
 Makes it possible for mat-datepicker to work with time zones.
 
+- Angular 15
+- Typescript 4.8.4
+- Node 18.12.1
+
 ## Initialization
-Make sure you updated the providers
-```
+Make sure you updated the providers.
+```typescript
   providers: [
     {
       provide: DATE_PIPE_DEFAULT_OPTIONS,
