@@ -8,6 +8,15 @@ Makes it possible for mat-datepicker to work with time zones.
 ## Initialization
 Make sure you updated the providers.
 ```typescript
+import { DateAdapter, MAT_DATE_LOCALE } from '@angular/material/core';
+import enUS from 'date-fns/locale/en-US';
+import {
+  MAT_DATE_TIMEZONE,
+  DateFnsTzAdapter,
+} from './index.ts';
+```
+---
+```typescript
   providers: [
     {
       provide: DATE_PIPE_DEFAULT_OPTIONS,
